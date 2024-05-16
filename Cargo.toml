@@ -1,0 +1,21 @@
+[package]
+name = "dicom-dripper-for-desktop"
+version = "0.1.0"
+authors = ["st-little"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+dioxus = { version = "0.5", features = ["desktop"] }
+
+# Debug
+tracing = "0.1.40"
+dioxus-logger = "0.5.0"
+anyhow = "1.0.83"
+base64 = "0.22.1"
+serde = "1.0.201"
+dicom = "0.7.0"
+dicom-pixeldata = { version = "0.7.0", features = ["gdcm"] }
+dicom-toimage = "0.7.0"
